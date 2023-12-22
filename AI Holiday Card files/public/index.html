@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISU College of Design Holiday Card</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Des*AI*gn Tunes</h1>
+            <p>AI may rule the world in 2024, but today, it's busy<br> composing your very own College of Design song!
+            </p>
+            <p>We just need your name or nickname, and graduation year.</p>
+        </header>
+
+        <form id="holidayCardForm">
+            <div class="form-group">
+                <label for="name">Your Name or Nickname:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Graduation Year (since 1945):</label>
+                <input type="number" id="year" name="year" placeholder="Enter year" min="1945" max="2023" required>
+            </div>
+
+            <button type="submit">Generate Holiday Song</button>
+        </form>
+
+        <div id="songLyrics">
+            <!-- Song lyrics will be displayed here -->
+        </div>
+
+        <button id="resetButton" style="display:none;">Try Again</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>
